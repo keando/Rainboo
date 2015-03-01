@@ -22,8 +22,38 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="header_02" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Na-sR8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-Ud-hAo">
-                                <rect key="frame" x="145" y="247" width="30" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-wb-cAC">
+                                <rect key="frame" x="27" y="511" width="54" height="30"/>
+                                <state key="normal" title="ボタン1">
+                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xe2-Vn-Vgf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE7-Sk-XkE">
+                                <rect key="frame" x="133" y="511" width="54" height="30"/>
+                                <state key="normal" title="ボタン2">
+                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1X4-9P-evJ">
+                                <rect key="frame" x="258" y="511" width="54" height="30"/>
+                                <state key="normal" title="ボタン3">
+                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="my location" translatesAutoresizingMaskIntoConstraints="NO" id="zOk-If-9I6">
+                                <rect key="frame" x="54" y="208" width="213" height="210"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="UXX-wT-jBE">
+                                <rect key="frame" x="184" y="216" width="30" height="29"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="wuM-t6-kiY">
+                                <rect key="frame" x="155" y="105" width="10" height="26"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -37,7 +67,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="10" height="26"/>
         <image name="header_02" width="320" height="142"/>
+        <image name="my location" width="213" height="210"/>
         <image name="rainboo" width="30" height="29"/>
         <image name="roppongi" width="857" height="568"/>
     </resources>

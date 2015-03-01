@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonTouched(sender: AnyObject) {
+        println("ボタン押された")
+        
+        rainboo.hidden = false
+        
+        
 
 }
 
