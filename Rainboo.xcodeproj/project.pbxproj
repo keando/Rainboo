@@ -161,9 +161,11 @@
 				TargetAttributes = {
 					20CA33F81A956B9400D0B922 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Y6LHTNYSDM;
 					};
 					20CA340D1A956B9500D0B922 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Y6LHTNYSDM;
 						TestTargetID = 20CA33F81A956B9400D0B922;
 					};
 				};
@@ -336,9 +338,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: RYOSUKE HIRAMATSU (CX83Y44847)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: RYOSUKE HIRAMATSU (CX83Y44847)";
 				INFOPLIST_FILE = Rainboo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bd452d00-be45-4efd-ba9f-c62e01b9f0a9";
 			};
 			name = Debug;
 		};
@@ -346,9 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Rainboo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -356,6 +364,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -367,6 +377,7 @@
 				INFOPLIST_FILE = RainbooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainboo.app/Rainboo";
 			};
 			name = Debug;
@@ -375,6 +386,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -382,6 +395,7 @@
 				INFOPLIST_FILE = RainbooTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rainboo.app/Rainboo";
 			};
 			name = Release;
@@ -405,6 +419,7 @@
 				20CA341A1A956B9500D0B922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20CA341B1A956B9500D0B922 /* Build configuration list for PBXNativeTarget "RainbooTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +428,7 @@
 				20CA341D1A956B9500D0B922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,9 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var rainboo1: UIImageView!
+    @IBOutlet weak var rainboo2: UIImageView!
+    
+    @IBOutlet weak var countLabel: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        rainboo1.hidden = true
+        rainboo2.hidden = true
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,9 +37,66 @@ class ViewController: UIViewController {
     @IBAction func buttonTouched(sender: AnyObject) {
         println("ボタン押された")
         
-        rainboo.hidden = false
+        if rainboo1.hidden == true {
+            // 表示する
+            rainboo1.hidden = false
+            showWithAnimation(rainboo1)
+        }
+        else {
+            rainboo1.hidden = true
+        }
+        
+        countRainboo()
+    }
+    
+    func countRainboo() {
+        var count = 0
+        if rainboo1.hidden == false {
+            count++
+        }
+        if rainboo2.hidden == false {
+            count++
+        }
+
+        
+        println("いま開いているのは\(count)本です")
+        countLabel.text = "\(count)"
+        
+    }
+
+    @IBAction func button2Touched(sender: AnyObject) {
+        println("ボタン押された")
+        
+        if rainboo2.hidden == true {
+            rainboo2.hidden = false
+            showWithAnimation(rainboo2)
+        }
+        else {
+            rainboo2.hidden = true
+        }
+        
+        countRainboo()
+    }
+    
+    
+    // アニメーションつきで傘を開くメソッド
+    private func showWithAnimation(imageView: UIImageView) {
+        
+        // 初期状態書く
+        imageView.alpha = 0
+        imageView.transform = CGAffineTransformMakeRotation(CGFloat(0*M_PI/180))
+       
+        
+        UIView.animateWithDuration(0.3,
+            animations: { () -> Void in
+                // アニメーションの最後の状態を書く
+                imageView.alpha = 1
+                 imageView.transform = CGAffineTransformMakeRotation(CGFloat(60*M_PI/180))
+        })
         
         
+    }
+
 
 }
 

@@ -19,9 +19,6 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="roppongi" translatesAutoresizingMaskIntoConstraints="NO" id="QX7-85-B07">
                                 <rect key="frame" x="-128" y="0.0" width="857" height="568"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="header_02" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Na-sR8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-wb-cAC">
                                 <rect key="frame" x="27" y="511" width="54" height="30"/>
                                 <state key="normal" title="ボタン1">
@@ -38,6 +35,9 @@
                                     <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="button2Touched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eyo-QH-aLC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1X4-9P-evJ">
                                 <rect key="frame" x="258" y="511" width="54" height="30"/>
@@ -52,22 +52,37 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="UXX-wT-jBE">
                                 <rect key="frame" x="184" y="216" width="30" height="29"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="wuM-t6-kiY">
-                                <rect key="frame" x="155" y="105" width="10" height="26"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-YS-7MQ">
+                                <rect key="frame" x="237" y="332" width="30" height="29"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="header_02" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Na-sR8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2l-jV-JHi">
+                                <rect key="frame" x="144" y="104" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.97764258339999999" blue="0.9750123087" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="O8g-A6-6sK"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countLabel" destination="c2l-jV-JHi" id="uhn-CH-3j6"/>
+                        <outlet property="rainboo1" destination="UXX-wT-jBE" id="dYe-u9-DhZ"/>
+                        <outlet property="rainboo2" destination="V0m-YS-7MQ" id="TDD-jM-Vk5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="951" y="136"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="10" height="26"/>
         <image name="header_02" width="320" height="142"/>
         <image name="my location" width="213" height="210"/>
         <image name="rainboo" width="30" height="29"/>
