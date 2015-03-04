@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var rainboo1: UIImageView!
     @IBOutlet weak var rainboo2: UIImageView!
+    @IBOutlet weak var rainboo3: UIImageView!
     
     @IBOutlet weak var countLabel: UILabel!
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         
         rainboo1.hidden = true
         rainboo2.hidden = true
+        rainboo3.hidden = true
         
         
     }
@@ -57,6 +59,10 @@ class ViewController: UIViewController {
         if rainboo2.hidden == false {
             count++
         }
+        if rainboo3.hidden == false {
+            count++
+        }
+
 
         
         println("いま開いているのは\(count)本です")
@@ -78,6 +84,22 @@ class ViewController: UIViewController {
         countRainboo()
     }
     
+    @IBAction func button3Touched(sender: AnyObject) {
+        println("ボタン押された")
+        
+        if rainboo3.hidden == true {
+            rainboo3.hidden = false
+            showWithAnimation(rainboo3)
+        }
+        else {
+            rainboo3.hidden = true
+        }
+        
+        countRainboo()
+    }
+
+    
+    
     
     // アニメーションつきで傘を開くメソッド
     private func showWithAnimation(imageView: UIImageView) {
@@ -93,11 +115,8 @@ class ViewController: UIViewController {
                 imageView.alpha = 1
                  imageView.transform = CGAffineTransformMakeRotation(CGFloat(60*M_PI/180))
         })
-        
-        
     }
-
-
+    
 }
 
 

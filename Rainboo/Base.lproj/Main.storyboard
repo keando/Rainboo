@@ -45,6 +45,9 @@
                                     <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="button3Touched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="inH-GY-pOl"/>
+                                </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="my location" translatesAutoresizingMaskIntoConstraints="NO" id="zOk-If-9I6">
                                 <rect key="frame" x="54" y="208" width="213" height="210"/>
@@ -58,9 +61,12 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="header_02" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Na-sR8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="cPR-QP-zsr">
+                                <rect key="frame" x="144" y="345" width="30" height="29"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2l-jV-JHi">
-                                <rect key="frame" x="144" y="104" width="32" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="144" y="100" width="32" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.97764258339999999" blue="0.9750123087" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -75,6 +81,7 @@
                         <outlet property="countLabel" destination="c2l-jV-JHi" id="uhn-CH-3j6"/>
                         <outlet property="rainboo1" destination="UXX-wT-jBE" id="dYe-u9-DhZ"/>
                         <outlet property="rainboo2" destination="V0m-YS-7MQ" id="TDD-jM-Vk5"/>
+                        <outlet property="rainboo3" destination="cPR-QP-zsr" id="y4U-lQ-ZlA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
