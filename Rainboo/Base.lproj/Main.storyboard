@@ -19,6 +19,9 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="roppongi" translatesAutoresizingMaskIntoConstraints="NO" id="QX7-85-B07">
                                 <rect key="frame" x="-128" y="0.0" width="857" height="568"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="midtown" translatesAutoresizingMaskIntoConstraints="NO" id="1Tt-uJ-Qty">
+                                <rect key="frame" x="-1" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-wb-cAC">
                                 <rect key="frame" x="27" y="511" width="54" height="30"/>
                                 <state key="normal" title="ボタン1">
@@ -49,27 +52,24 @@
                                     <action selector="button3Touched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="inH-GY-pOl"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="my location" translatesAutoresizingMaskIntoConstraints="NO" id="zOk-If-9I6">
-                                <rect key="frame" x="54" y="208" width="213" height="210"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="UXX-wT-jBE">
-                                <rect key="frame" x="184" y="216" width="30" height="29"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-YS-7MQ">
-                                <rect key="frame" x="237" y="332" width="30" height="29"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="header_02" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Na-sR8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="rainboo" translatesAutoresizingMaskIntoConstraints="NO" id="cPR-QP-zsr">
-                                <rect key="frame" x="144" y="345" width="30" height="29"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2l-jV-JHi">
-                                <rect key="frame" x="144" y="100" width="32" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <rect key="frame" x="138" y="86" width="43" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <color key="textColor" red="1" green="0.97764258339999999" blue="0.9750123087" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sMq-aK-hBz">
+                                <rect key="frame" x="65" y="364" width="83" height="82"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1QS-bT-LYs">
+                                <rect key="frame" x="184" y="168" width="83" height="82"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lc0-Vo-9Gt">
+                                <rect key="frame" x="216" y="322" width="83" height="82"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -79,9 +79,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="countLabel" destination="c2l-jV-JHi" id="uhn-CH-3j6"/>
-                        <outlet property="rainboo1" destination="UXX-wT-jBE" id="dYe-u9-DhZ"/>
-                        <outlet property="rainboo2" destination="V0m-YS-7MQ" id="TDD-jM-Vk5"/>
-                        <outlet property="rainboo3" destination="cPR-QP-zsr" id="y4U-lQ-ZlA"/>
+                        <outlet property="rainboo1" destination="sMq-aK-hBz" id="hLK-tQ-4XG"/>
+                        <outlet property="rainboo2" destination="1QS-bT-LYs" id="SY3-JD-2gZ"/>
+                        <outlet property="rainboo3" destination="lc0-Vo-9Gt" id="SVE-1R-WV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -91,8 +91,8 @@
     </scenes>
     <resources>
         <image name="header_02" width="320" height="142"/>
-        <image name="my location" width="213" height="210"/>
-        <image name="rainboo" width="30" height="29"/>
+        <image name="logo" width="83" height="82"/>
+        <image name="midtown" width="320" height="568"/>
         <image name="roppongi" width="857" height="568"/>
     </resources>
 </document>
