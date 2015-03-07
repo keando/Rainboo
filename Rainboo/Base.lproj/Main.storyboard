@@ -16,36 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-wb-cAC">
-                                <rect key="frame" x="27" y="511" width="54" height="30"/>
-                                <state key="normal" title="ボタン1">
-                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xe2-Vn-Vgf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE7-Sk-XkE">
-                                <rect key="frame" x="133" y="511" width="54" height="30"/>
-                                <state key="normal" title="ボタン2">
-                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="button2Touched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eyo-QH-aLC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1X4-9P-evJ">
-                                <rect key="frame" x="258" y="511" width="54" height="30"/>
-                                <state key="normal" title="ボタン3">
-                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="button3Touched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="inH-GY-pOl"/>
-                                </connections>
-                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="midtown" translatesAutoresizingMaskIntoConstraints="NO" id="1Tt-uJ-Qty">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="header_02" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Na-sR8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                             </imageView>
@@ -64,9 +37,36 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lc0-Vo-9Gt">
                                 <rect key="frame" x="216" y="322" width="83" height="82"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="midtown" translatesAutoresizingMaskIntoConstraints="NO" id="1Tt-uJ-Qty">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-wb-cAC">
+                                <rect key="frame" x="16" y="518" width="75" height="41"/>
+                                <state key="normal" title="ボタン1">
+                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xe2-Vn-Vgf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE7-Sk-XkE">
+                                <rect key="frame" x="122" y="517" width="77" height="43"/>
+                                <state key="normal" title="ボタン2">
+                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2Touched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eyo-QH-aLC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1X4-9P-evJ">
+                                <rect key="frame" x="225" y="518" width="74" height="41"/>
+                                <state key="normal" title="ボタン3">
+                                    <color key="titleColor" red="1" green="0.97764258343903165" blue="0.97501230867016586" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button3Touched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="inH-GY-pOl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
